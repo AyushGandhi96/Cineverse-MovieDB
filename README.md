@@ -24,7 +24,6 @@ A full-stack Online Movie Ticket Booking System developed using **HTML, CSS, Jav
 ### Backend
 
 * Node.js
-* Express.js
 
 ### Database
 
