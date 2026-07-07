@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineVerse | Online Movie Ticket Booking</title>
+
+    <link rel="stylesheet" href="movie.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🎬 CineVerse
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <div class="search-box">
+
+                <input type="text" placeholder="Search movies...">
+
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Book Movie Tickets Online</h1>
+
+            <p>
+                Watch the latest movies in your favourite theatres.
+                Book anytime, anywhere.
+            </p>
+
+            <a href="movies.html">
+                <button class="hero-btn">
+                    Book Tickets
+                </button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <h2>Browse By Category</h2>
+
+        <div class="category-container">
+
+            <div class="category">
+                🎬
+                <p>Action</p>
+            </div>
+
+            <div class="category">
+                😂
+                <p>Comedy</p>
+            </div>
+
+            <div class="category">
+                ❤️
+                <p>Romance</p>
+            </div>
+
+            <div class="category">
+                👻
+                <p>Horror</p>
+            </div>
+
+            <div class="category">
+                🚀
+                <p>Sci-Fi</p>
+            </div>
+
+            <div class="category">
+                🎭
+                <p>Drama</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Movies -->
+
+    <section class="movies">
+
+        <h2>Now Showing</h2>
+
+        <div class="movie-grid">
+
+            <!-- Movie 1 -->
+
+            <div class="movie-card">
+
+                <img src="https://picsum.photos/300/450?random=1" alt="Movie">
+
+                <h3>Avengers Endgame</h3>
+
+                <p>⭐ 8.8</p>
+
+                <p>₹250</p>
+
+                <button onclick="bookMovie('Avengers Endgame')">
+                    Book Now
+                </button>
+
+            </div>
+
+            <!-- Movie 2 -->
+
+            <div class="movie-card">
+
+                <img src="https://picsum.photos/300/450?random=2" alt="Movie">
+
+                <h3>John Wick 4</h3>
+
+                <p>⭐ 8.5</p>
+
+                <p>₹300</p>
+
+                <button onclick="bookMovie('John Wick 4')">
+                    Book Now
+                </button>
+
+            </div>
+
+            <!-- Movie 3 -->
+
+            <div class="movie-card">
+
+                <img src="https://picsum.photos/300/450?random=3" alt="Movie">
+
+                <h3>Interstellar</h3>
+
+                <p>⭐ 9.0</p>
+
+                <p>₹280</p>
+
+                <button onclick="bookMovie('Interstellar')">
+                    Book Now
+                </button>
+
+            </div>
+
+            <!-- Movie 4 -->
+
+            <div class="movie-card">
+
+                <img src="https://picsum.photos/300/450?random=4" alt="Movie">
+
+                <h3>The Batman</h3>
+
+                <p>⭐ 8.7</p>
+
+                <p>₹260</p>
+
+                <button onclick="bookMovie('The Batman')">
+                    Book Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Choose Us -->
+
+    <section class="why">
+
+        <h2>Why Choose CineVerse?</h2>
+
+        <div class="features">
+
+            <div>
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <h3>Instant Booking</h3>
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-couch"></i>
+
+                <h3>Select Seats</h3>
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <h3>Secure Payments</h3>
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-film"></i>
+
+                <h3>Latest Movies</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>🎬 CineVerse</h2>
+
+            <p>Your favourite destination for booking movie tickets.</p>
+
+            <div class="social">
+
+                <i class="fab fa-facebook"></i>
+
+                <i class="fab fa-instagram"></i>
+
+                <i class="fab fa-twitter"></i>
+
+                <i class="fab fa-youtube"></i>
+
+            </div>
+
+            <p>© 2026 CineVerse | All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <script src="movie.js"></script>
+
+</body>
+
+</html>

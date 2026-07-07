@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Details | CineVerse</title>
+
+    <link rel="stylesheet" href="detail.css">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <a href="index.html">
+                    🎬 CineVerse
+                </a>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="movies.html">Movies</a></li>
+
+                <li><a href="login.html">Login</a></li>
+
+                <li><a href="register.html">Register</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MOVIE HERO ================= -->
+
+    <section class="movie-banner">
+
+        <img id="bannerImage"
+            src="images/default-banner.jpg"
+            alt="Movie Banner">
+
+    </section>
+
+
+    <!-- ================= MOVIE DETAILS ================= -->
+
+    <section class="movie-container">
+
+        <div class="poster">
+
+            <img id="moviePoster"
+                src="images/default-poster.jpg"
+                alt="Movie Poster">
+
+        </div>
+
+
+        <div class="movie-info">
+
+            <h1 id="movieTitle">
+
+                Loading...
+
+            </h1>
+
+            <div class="movie-meta">
+
+                <span id="movieGenre">
+
+                    Action
+
+                </span>
+
+                <span>|</span>
+
+                <span id="movieLanguage">
+
+                    English
+
+                </span>
+
+                <span>|</span>
+
+                <span id="movieDuration">
+
+                    2h 30m
+
+                </span>
+
+                <span>|</span>
+
+                <span id="movieRelease">
+
+                    2025
+
+                </span>
+
+            </div>
+
+
+            <div class="rating">
+
+                ⭐ <span id="movieRating">8.5</span>/10
+
+            </div>
+
+
+            <p id="movieDescription">
+
+                Movie description will appear here...
+
+            </p>
+
+
+            <div class="movie-extra">
+
+                <h3>Director</h3>
+
+                <p id="movieDirector">
+
+                    Loading...
+
+                </p>
+
+
+                <h3>Cast</h3>
+
+                <p id="movieCast">
+
+                    Loading...
+
+                </p>
+
+            </div>
+
+
+            <div class="buttons">
+
+                <button id="watchTrailer">
+
+                    <i class="fa-solid fa-play"></i>
+
+                    Watch Trailer
+
+                </button>
+
+                <button id="bookNow">
+
+                    Book Tickets
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SHOW TIMINGS ================= -->
+
+    <section class="show-section">
+
+        <h2>
+
+            Available Shows
+
+        </h2>
+
+        <div id="showContainer" class="show-container">
+
+            <!-- Shows loaded from JS -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= THEATRES ================= -->
+
+    <section class="theatre-section">
+
+        <h2>
+
+            Available Theatres
+
+        </h2>
+
+        <div id="theatreContainer">
+
+            <!-- Theatre list generated dynamically -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT MOVIE ================= -->
+
+    <section class="about-movie">
+
+        <h2>
+
+            About the Movie
+
+        </h2>
+
+        <p id="longDescription">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            This section will be fetched from database.
+
+        </p>
+
+    </section>
+
+        <!-- ================= CAST SECTION ================= -->
+
+    <section class="cast-section">
+
+        <h2>Top Cast</h2>
+
+        <div id="castContainer" class="cast-container">
+
+            <!-- Cast Card 1 -->
+            <div class="cast-card">
+                <img src="images/cast1.jpg" alt="Actor">
+                <h4>Actor Name</h4>
+                <p>Lead Role</p>
+            </div>
+
+            <!-- Cast Card 2 -->
+            <div class="cast-card">
+                <img src="images/cast2.jpg" alt="Actor">
+                <h4>Actor Name</h4>
+                <p>Supporting Role</p>
+            </div>
+
+            <!-- Remaining cast will be loaded dynamically -->
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MOVIE GALLERY ================= -->
+
+    <section class="gallery-section">
+
+        <h2>Movie Gallery</h2>
+
+        <div class="gallery">
+
+            <img src="images/gallery1.jpg" alt="Gallery Image">
+
+            <img src="images/gallery2.jpg" alt="Gallery Image">
+
+            <img src="images/gallery3.jpg" alt="Gallery Image">
+
+            <img src="images/gallery4.jpg" alt="Gallery Image">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= RECOMMENDED MOVIES ================= -->
+
+    <section class="recommended">
+
+        <h2>You May Also Like</h2>
+
+        <div id="recommendedContainer" class="recommended-container">
+
+            <!-- Movie Card -->
+
+            <div class="recommend-card">
+
+                <img src="images/movie1.jpg" alt="Movie">
+
+                <h3>Movie Name</h3>
+
+                <button>View Details</button>
+
+            </div>
+
+            <!-- More cards will come from JavaScript -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <h3>CineVerse</h3>
+
+                <p>
+
+                    Book movie tickets online anytime, anywhere.
+                    Experience hassle-free ticket booking with your
+                    favourite theatres.
+
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="movies.html">Movies</a></li>
+
+                    <li><a href="login.html">Login</a></li>
+
+                    <li><a href="register.html">Register</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>Email : support@cineverse.com</p>
+
+                <p>Phone : +91 9876543210</p>
+
+                <p>India</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 CineVerse | All Rights Reserved
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= SCRIPTS ================= -->
+
+    <script src="detail.js"></script>
+
+    
+
+</body>
+
+</html>

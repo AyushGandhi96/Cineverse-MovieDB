@@ -1,0 +1,655 @@
+/* ===============================
+   DETAILS PAGE
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* ===============================
+   MOVIE BANNER
+================================= */
+
+.movie-banner{
+    width:100%;
+    height:420px;
+    overflow:hidden;
+    position:relative;
+}
+
+.movie-banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(40%);
+}
+
+/* ===============================
+   MOVIE CONTAINER
+================================= */
+
+.movie-container{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    gap:50px;
+
+    margin-top:-140px;
+    position:relative;
+    z-index:10;
+}
+
+.poster{
+
+    width:320px;
+}
+
+.poster img{
+
+    width:100%;
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.6);
+
+}
+
+/* ===============================
+   MOVIE INFO
+================================= */
+
+.movie-info{
+
+    flex:1;
+
+    padding-top:50px;
+}
+
+.movie-info h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.movie-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    color:#d1d5db;
+
+    margin-bottom:20px;
+}
+
+.rating{
+
+    font-size:22px;
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+}
+
+.movie-info p{
+
+    line-height:1.8;
+
+    color:#ddd;
+
+    margin-bottom:18px;
+}
+
+.movie-extra h3{
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    color:#ff4757;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+.buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:20px;
+}
+
+.buttons button{
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#watchTrailer{
+
+    background:#ffffff;
+
+    color:#111827;
+}
+
+#watchTrailer:hover{
+
+    background:#e5e7eb;
+}
+
+#bookNow{
+
+    background:#e50914;
+
+    color:white;
+}
+
+#bookNow:hover{
+
+    background:#b20710;
+}
+
+/* ===============================
+   SHOW SECTION
+================================= */
+
+.show-section{
+
+    width:90%;
+
+    margin:70px auto;
+}
+
+.show-section h2{
+
+    margin-bottom:30px;
+
+    font-size:32px;
+}
+
+.show-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+}
+
+.show-card{
+
+    width:200px;
+
+    background:#1e293b;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.show-card:hover{
+
+    transform:translateY(-5px);
+
+    background:#334155;
+}
+
+.show-card h3{
+
+    margin-bottom:10px;
+}
+
+.show-card p{
+
+    margin-bottom:10px;
+
+    color:#d1d5db;
+}
+
+.show-card button{
+
+    width:100%;
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:#e50914;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.show-card button:hover{
+
+    background:#b20710;
+}
+
+/* ===============================
+   THEATRES
+================================= */
+
+.theatre-section{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-bottom:70px;
+}
+
+.theatre-section h2{
+
+    margin-bottom:25px;
+}
+
+#theatreContainer{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.theatre-card{
+
+    background:#1e293b;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    transition:.3s;
+}
+
+.theatre-card:hover{
+
+    transform:translateY(-6px);
+}
+
+.theatre-card h3{
+
+    margin-bottom:10px;
+}
+
+.theatre-card p{
+
+    color:#d1d5db;
+}
+/* ===========================================
+   ABOUT MOVIE
+=========================================== */
+
+.about-movie{
+    width:90%;
+    margin:60px auto;
+}
+
+.about-movie h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.about-movie p{
+    color:#d1d5db;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* ===========================================
+   CAST SECTION
+=========================================== */
+
+.cast-section{
+    width:90%;
+    margin:70px auto;
+}
+
+.cast-section h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.cast-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.cast-card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.cast-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+.cast-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.cast-card h4{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.cast-card p{
+    color:#d1d5db;
+    padding-bottom:20px;
+}
+
+/* ===========================================
+   GALLERY
+=========================================== */
+
+.gallery-section{
+    width:90%;
+    margin:80px auto;
+}
+
+.gallery-section h2{
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================================
+   RECOMMENDED MOVIES
+=========================================== */
+
+.recommended{
+    width:90%;
+    margin:80px auto;
+}
+
+.recommended h2{
+    margin-bottom:30px;
+}
+
+.recommended-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.recommend-card{
+    background:#1e293b;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.recommend-card:hover{
+    transform:translateY(-8px);
+}
+
+.recommend-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.recommend-card h3{
+    text-align:center;
+    margin:20px 0;
+}
+
+.recommend-card button{
+    display:block;
+    width:85%;
+    margin:15px auto 25px;
+    padding:12px;
+    border:none;
+    background:#e50914;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.recommend-card button:hover{
+    background:#b20710;
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+footer{
+    background:#020617;
+    margin-top:70px;
+}
+
+.footer-container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+    padding:50px 0;
+}
+
+.footer-container h3{
+    margin-bottom:15px;
+}
+
+.footer-container p,
+.footer-container li{
+    color:#cbd5e1;
+    margin-bottom:10px;
+}
+
+.footer-links ul{
+    list-style:none;
+}
+
+.footer-links a{
+    color:#cbd5e1;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:#ffffff;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid #334155;
+    padding:20px;
+    color:#94a3b8;
+}
+
+/* ===========================================
+   SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ef4444;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+.movie-container{
+
+    flex-direction:column;
+    align-items:center;
+    margin-top:-100px;
+
+}
+
+.poster{
+
+    width:280px;
+
+}
+
+.movie-info{
+
+    padding-top:20px;
+    text-align:center;
+
+}
+
+.movie-meta{
+
+    justify-content:center;
+
+}
+
+.buttons{
+
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.movie-banner{
+
+    height:280px;
+
+}
+
+.movie-info h1{
+
+    font-size:32px;
+
+}
+
+.show-card{
+
+    width:100%;
+
+}
+
+.cast-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+.recommended-container{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.movie-info h1{
+
+    font-size:26px;
+
+}
+
+.movie-meta{
+
+    flex-direction:column;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.buttons button{
+
+    width:100%;
+
+}
+
+.cast-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+    text-align:center;
+
+}
+
+}
