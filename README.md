@@ -7,7 +7,7 @@ A full-stack Online Movie Ticket Booking System developed using **HTML, CSS, Jav
 * User Registration
 * User Login
 * Responsive User Interface
-* Backend API using Node.js and Express.js
+* Backend API using Node.js 
 * PostgreSQL Database Integration
 * Secure storage of user registration details
 * Movie, Theater, Screen, Show, Seat, Booking, Payment, and Ticket database design
